@@ -3,9 +3,9 @@
 	"id": "cilantro-mod",
 	"version": "${version}",
 	"name": "Cilantro Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Minecraft mod that adds Cilantro to the game, so I can learn how to use Fabric to make mods :)",
 	"authors": [
-		"Me!"
+		"nsdawn"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"dev.nsdawn.cilantromod.CilantroMod"
+		],
+		"client": [
+			"dev.nsdawn.cilantromod.CilantroModClient"
 		],
 		"fabric-datagen": [
 			"dev.nsdawn.cilantromod.CilantroModDataGenerator"
