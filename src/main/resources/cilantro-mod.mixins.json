@@ -3,7 +3,14 @@
 	"package": "dev.nsdawn.cilantromod.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"AnimalEntityMixin",
+		"SheepEntityMixin",
+		"PigEntityMixin",
+		"ChickenEntityMixin",
+		"RabbitEntityMixin",
+		"GoatEntityMixin",
+		"CowEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
