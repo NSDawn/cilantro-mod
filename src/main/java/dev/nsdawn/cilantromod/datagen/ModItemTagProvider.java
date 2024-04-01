@@ -3,6 +3,7 @@ package dev.nsdawn.cilantromod.datagen;
 import dev.nsdawn.cilantromod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.ComposterBlock;
 import net.minecraft.entity.passive.ChickenEntity;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.registry.RegistryWrapper;
@@ -27,6 +28,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.VILLAGER_PLANTABLE_SEEDS)
                 .add(ModItems.CORIANDER_SEEDS);
+
+
 
     }
 }
