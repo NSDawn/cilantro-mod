@@ -5,7 +5,8 @@ A Minecraft mod that adds Cilantro to the game, using the Fabric API.
 - For Minecraft 1.20.x
 ## Features
 This mod implements the rare crop Cilantro, and Coriander Seeds to grow it.
-<img style="width:50%" alt="Cilantro" src="/public-assets/cilantro.png">
+<img align='center' style="width:25%" alt="Cilantro" src="/public-assets/cilantro.png">
+
 Cilantro has assorted uses, similar to other crops in the game.
 
 ### Farming
