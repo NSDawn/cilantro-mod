@@ -9,8 +9,9 @@
 		"PigEntityMixin",
 		"ChickenEntityMixin",
 		"RabbitEntityMixin",
-		"GoatEntityMixin",
-		"CowEntityMixin"
+		"GoatBrainMixin",
+		"CowEntityMixin",
+		"ComposterBlockMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
