@@ -1,10 +1,12 @@
 package dev.nsdawn.cilantromod.item;
 
 import dev.nsdawn.cilantromod.CilantroMod;
+import dev.nsdawn.cilantromod.block.ModBlocks;
 import dev.nsdawn.cilantromod.item.items.CilantroItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -18,7 +20,7 @@ public class ModItems {
             .food(new FoodComponent.Builder().hunger(1).saturationModifier(0.3F).build())
     ));
 
-    public static final Item CORIANDER_SEEDS = registerItem("coriander_seeds", new Item(new FabricItemSettings()));
+    public static final Item CORIANDER_SEEDS = registerItem("coriander_seeds", new AliasedBlockItem(ModBlocks.CILANTRO_CROP, new FabricItemSettings()));
 
 
     private static void addItemsToItemGroupFoodAndDrink(FabricItemGroupEntries entries) {

@@ -1,5 +1,7 @@
 package dev.nsdawn.cilantromod;
 
+import dev.nsdawn.cilantromod.block.ModBlocks;
+import dev.nsdawn.cilantromod.datagen.ModModelProvider;
 import dev.nsdawn.cilantromod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -24,6 +26,7 @@ public class CilantroMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 		LOGGER.info("Hello Fabric world!");
 	}

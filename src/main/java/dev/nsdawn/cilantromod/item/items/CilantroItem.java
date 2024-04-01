@@ -27,7 +27,6 @@ public class CilantroItem extends Item {
         if (random.nextInt(10) + 1 == 7) {
             final int NAUSEA_DURATION = (random.nextInt(7) + 7) * 20;
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, NAUSEA_DURATION, 0));
-
         }
 
         return super.finishUsing(stack, world, user);
