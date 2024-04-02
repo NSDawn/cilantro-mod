@@ -35,6 +35,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.CILANTRO_CROP, LootTable.builder()
                 .pool(LootPool.builder().conditionally(cilantroBuilderState6).with(ItemEntry.builder(Items.STICK)))
+                .pool(LootPool.builder().conditionally(cilantroBuilderState5).with((ItemEntry.builder(Items.STICK).apply(ApplyBonusLootFunction.binomialWithBonusCount(Enchantments.FORTUNE, 0.5714286f, 1)))))
                 .pool(LootPool.builder().conditionally(cilantroBuilderState6).with(ItemEntry.builder(ModItems.CORIANDER_SEEDS)))
                 .pool(LootPool.builder().conditionally(cilantroBuilderState6).with((ItemEntry.builder(ModItems.CORIANDER_SEEDS).apply(ApplyBonusLootFunction.binomialWithBonusCount(Enchantments.FORTUNE, 0.5714286f, 3)))))
                 .pool(LootPool.builder().conditionally(cilantroBuilderState5).with(ItemEntry.builder(Items.STICK)))

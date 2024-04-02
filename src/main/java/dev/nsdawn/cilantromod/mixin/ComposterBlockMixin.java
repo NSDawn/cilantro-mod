@@ -4,6 +4,7 @@ import dev.nsdawn.cilantromod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.ComposterBlock;
 import net.minecraft.block.InventoryProvider;
+import net.minecraft.entity.passive.HorseEntity;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import org.spongepowered.asm.mixin.Mixin;
@@ -13,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import static net.minecraft.block.ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE;
 
-@Mixin (ComposterBlock.class)
+@Mixin(ComposterBlock.class)
 public abstract class ComposterBlockMixin extends Block implements InventoryProvider {
     public ComposterBlockMixin(Settings settings) {
         super(settings);

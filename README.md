@@ -1,7 +1,7 @@
 <div align="center">
     <img
         src="/public-assets/cilantro.png"
-        alt="bv dental logo"
+        alt="cilantro item"
         style="width:15%"
     />
     <br />
@@ -12,6 +12,8 @@ A Minecraft mod that adds Cilantro to the game, using the Fabric API.
 ## Specs
 - Requires Fabric API
 - For Minecraft 1.20.x
+- CC0 License: Do whatever you want with this.
+
 ## Features
 This mod implements the rare crop Cilantro, and Coriander Seeds to grow it.
 
@@ -21,17 +23,21 @@ Cilantro has assorted uses, similar to other crops in the game.
 
 Eating Cilantro on its own restores just 1 hunger point. For about 10% of players, it also causes a Nausea effect for 10-15 seconds, reflecting the real-life [OR6A2 gene](https://en.wikipedia.org/wiki/OR6A2) which seems to  cause a fraction of the population to be repulsed by the herb. In the mod, this is derived from the player's UUID, and thus will persist across sessions and worlds. 
 
+TODO:
+Golden Cilantro - cilantro + gold nugget
+Golden Curry - carrot / potato / coriander / gold nugget / bowl
+
 ### Farming
 Coriander Seeds can be planted on tilled soil as any other crop. However, the Cilantro crop, mimicking its growth in real life, can only yield Cilantro at young growth stages, and only yield seeds when fully grown. In this implementation, Cilantro Crops have seven growth stages (0-6).
 
-| Growth Stage:   | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
-|-----------------|---|---|---|---|---|---|---|
-| Cilantro        | - | 0-1 | 1-2 | 1-4 | 1-5 | 0-1 | - |
+| Growth Stage:   | 0 | 1 | 2 | 3 | 4 | 5 | 6   |
+|-----------------|---|---|---|---|---|---|-----|
+| Cilantro        | - | 0-1 | 1-2 | 1-4 | 1-5 | 0-1 | -   |
 | Coriander Seeds | - | - | - | - | - | - | 1-4 |
-| Stick           | - | - | - | - | - | 1 | 1 |
+| Stick           | - | - | - | - | - | 1 | 1-2 |
 
 ### Animals
-A large variety of animal mobs have an affinity for Cilantro, and thus it can be used to lure and breed the following mobs:
+Cilantro can be used to lure and breed a variety of mobs:
 - Cows/Mooshrooms
 - Sheep
 - Pigs
@@ -40,9 +46,13 @@ A large variety of animal mobs have an affinity for Cilantro, and thus it can be
 
 Most mobs have a larger affinity for Cilantro than vanilla crops (especially pigs), and will run faster towards the player if they are holding Cilantro.
 
+Cilantro heals 1 hunger point on the following animals, and speeds growth by 30 seconds: 
+- Horses/Donkeys
+- Llamas
+
 Additionally, Coriander Seeds can be used to lure and breed:
 - Chickens
-- Sniffers (do not follow the player)
+- Sniffers
 
 ### Composting
 The following items added by the Cilantro mod can be composted in a Composter:
@@ -51,6 +61,5 @@ The following items added by the Cilantro mod can be composted in a Composter:
 |------| ---|
 | Cilantro | 65% |
 | Coriander Seeds | 30% |
-
 
 
