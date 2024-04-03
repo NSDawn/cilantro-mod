@@ -21,5 +21,12 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.CILANTRO, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLDEN_CILANTRO, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.CORIANDER_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SALAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLDEN_CURRY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLDEN_CURRY_INGREDIENTS, Models.GENERATED);
     }
+
+
 }

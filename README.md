@@ -3,8 +3,8 @@
         src="/public-assets/cilantro.png"
         alt="cilantro item"
         style="width:15%"
-    />
-    <br />
+    >
+    <br>
     <h1> cilantro-mod: Minecraft Mod with Fabric API </h1>
 </div>
 A Minecraft mod that adds Cilantro to the game, using the Fabric API.

@@ -5,6 +5,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.LlamaEntity;
+import net.minecraft.entity.passive.MooshroomEntity;
 import net.minecraft.entity.passive.PigEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
@@ -28,7 +29,7 @@ public abstract class PigEntityMixin extends AnimalEntity {
             cir.setReturnValue(true);
         }
     }
-
+    // MooshroomEntity
     @Inject(at = @At("TAIL"), method = "initGoals()V")
     private void initGoals(CallbackInfo ci) {
         this.goalSelector.add(3, new TemptGoal(this, 1.55D, Ingredient.ofItems(ModItems.CILANTRO), false));
