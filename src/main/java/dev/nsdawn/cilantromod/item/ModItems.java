@@ -62,6 +62,7 @@ public class ModItems {
     private static void addItemsToItemGroupFoodAndDrink(FabricItemGroupEntries entries) {
         final Item[] items = new Item[] {
                 CILANTRO,
+                GOLDEN_CILANTRO,
                 SALAD,
                 GOLDEN_CURRY_INGREDIENTS,
                 GOLDEN_CURRY,
