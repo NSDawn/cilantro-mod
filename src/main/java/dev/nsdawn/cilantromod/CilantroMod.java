@@ -3,6 +3,7 @@ package dev.nsdawn.cilantromod;
 import dev.nsdawn.cilantromod.block.ModBlocks;
 import dev.nsdawn.cilantromod.datagen.ModModelProvider;
 import dev.nsdawn.cilantromod.item.ModItems;
+import dev.nsdawn.cilantromod.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
@@ -27,6 +28,8 @@ public class CilantroMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModLootTableModifiers.modifyLootTables();
 
 		LOGGER.info("Hello Fabric world!");
 	}

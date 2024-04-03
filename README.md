@@ -19,9 +19,27 @@ This mod implements the rare crop Cilantro, and Coriander Seeds to grow it.
 
 Cilantro has assorted uses, similar to other crops in the game.
 
+## Obtaining 
+
+### Loot
+Coriander Seeds must be found for the first time in one of the following two methods:
+- Jungle Temple Chests contain 1-4 Coriander Seeds 45% of the time.
+- Sniffer will dig up Coriander Seeds along with their normal sploot 10% of the time.
+
+### Farming
+Coriander Seeds can be planted on tilled soil as any other crop. However, the Cilantro crop, mimicking its growth in real life, can only yield Cilantro at young growth stages, and only yield seeds when fully grown. In this implementation, Cilantro Crops have seven growth stages (0-6).
+
+| Growth Stage:   | 0 | 1 | 2 | 3 | 4 | 5 | 6   |
+|-----------------|---|---|---|---|---|---|-----|
+| Cilantro        | - | 0-1 | 1-2 | 1-4 | 1-5 | 0-1 | -   |
+| Coriander Seeds | - | - | - | - | - | - | 1-4 |
+| Stick           | - | - | - | - | - | 1 | 1-2 |
+
+## Usage
+
 ### Food
 
-Eating Cilantro on its own restores just 1 hunger point. For about 10% of players, it also causes a Nausea effect for 10-15 seconds, reflecting the real-life [OR6A2 gene](https://en.wikipedia.org/wiki/OR6A2) which seems to  cause a fraction of the population to be repulsed by the herb. In the mod, this is derived from the player's UUID, and thus will persist across sessions and worlds. 
+Eating Cilantro on its own restores just 1 hunger point. However, for about 10% of players, all foods that include Cilantro also causes a Nausea effect for 20-30 seconds, reflecting the real-life [OR6A2 gene](https://en.wikipedia.org/wiki/OR6A2) which seems to  cause a fraction of the population to be repulsed by the herb. In the mod, this is derived from the player's UUID, and thus will persist across sessions and worlds. 
 
 Additionally, the following food items can be crafted using recipes including Cilantro or Coriander Seeds.
 
@@ -33,15 +51,6 @@ Additionally, the following food items can be crafted using recipes including Ci
 | Golden Curry             | Smelt Golden Curry Ingredients*                     | 18          | 1.6        | Absorption II & Strength II |
 
 (You can also craft Golden Curry directly using  Bowl + Coriander Seeds + Baked Potato + Carrot + Steak)
-
-### Farming
-Coriander Seeds can be planted on tilled soil as any other crop. However, the Cilantro crop, mimicking its growth in real life, can only yield Cilantro at young growth stages, and only yield seeds when fully grown. In this implementation, Cilantro Crops have seven growth stages (0-6).
-
-| Growth Stage:   | 0 | 1 | 2 | 3 | 4 | 5 | 6   |
-|-----------------|---|---|---|---|---|---|-----|
-| Cilantro        | - | 0-1 | 1-2 | 1-4 | 1-5 | 0-1 | -   |
-| Coriander Seeds | - | - | - | - | - | - | 1-4 |
-| Stick           | - | - | - | - | - | 1 | 1-2 |
 
 ### Animals
 Cilantro can be used to lure and breed a variety of mobs:
