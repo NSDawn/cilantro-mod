@@ -26,6 +26,7 @@ public class ModItems {
             .food(new FoodComponent.Builder().hunger(6)
                     .saturationModifier(1.2F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 2400, 0),1)
+                    .alwaysEdible()
                     .build())
     ));
 
@@ -52,7 +53,7 @@ public class ModItems {
             .food(new FoodComponent.Builder()
                     .hunger(14)
                     .saturationModifier(1.2F)
-                    .alwaysEdible().build())
+                    .build())
     ));
 
     // Items.GOLDEN_APPLE

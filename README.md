@@ -23,9 +23,16 @@ Cilantro has assorted uses, similar to other crops in the game.
 
 Eating Cilantro on its own restores just 1 hunger point. For about 10% of players, it also causes a Nausea effect for 10-15 seconds, reflecting the real-life [OR6A2 gene](https://en.wikipedia.org/wiki/OR6A2) which seems to  cause a fraction of the population to be repulsed by the herb. In the mod, this is derived from the player's UUID, and thus will persist across sessions and worlds. 
 
-TODO:
-Golden Cilantro - cilantro + gold nugget
-Golden Curry - carrot / potato / coriander / gold nugget / bowl
+Additionally, the following food items can be crafted using recipes including Cilantro or Coriander Seeds.
+
+| Food                     | Recipe                                              | Restoration | Saturation | Other Effects               |
+|--------------------------|-----------------------------------------------------|-------------|------------|-----------------------------|
+| Golden Cilantro          | Cilantro + 8 Gold Nuggets                           | 6           | 1.2        | Strength I                  |
+| Salad                    | Bowl + Cilantro + Carrot + Beetroot                 | 5           | 0.6        | -                           |
+| Golden Curry Ingredients | Bowl + Coriander Seeds + Potato + Carrot + Raw Beef | 14          | 1.2        | -                           |
+| Golden Curry             | Smelt Golden Curry Ingredients*                     | 18          | 1.6        | Absorption II & Strength II |
+
+(You can also craft Golden Curry directly using  Bowl + Coriander Seeds + Baked Potato + Carrot + Steak)
 
 ### Farming
 Coriander Seeds can be planted on tilled soil as any other crop. However, the Cilantro crop, mimicking its growth in real life, can only yield Cilantro at young growth stages, and only yield seeds when fully grown. In this implementation, Cilantro Crops have seven growth stages (0-6).
